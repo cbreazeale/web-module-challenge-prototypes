@@ -62,6 +62,11 @@ function Car(model, milesPerGallon) {
 Car.prototype.fill = function(gallons){
   this.tank += gallons
 }
+//STRETCH
+Car.prototype.drive = function(distance){
+  this.odometer = this.odometer + distance
+  ///idk how to do this part
+}
 
 /*
   TASK 3
@@ -77,7 +82,7 @@ function Baby(name, age, favoriteToy) {
 }
 Baby.prototype = Object.create(Person.prototype);
 
-Baby.prototype.play = function(favoriteToy){
+Baby.prototype.play = function(){
   return `Playing with ${this.favoriteToy}.`
 }
 
