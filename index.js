@@ -67,7 +67,7 @@ Car.prototype.drive = function(distance){
   this.odometer = this.odometer + distance
 
   ///idk how to do this part
-  
+
   if(this.tank = 0) {
     return `I ran out of fuel at ${this.odometer} miles!`
   }
@@ -95,10 +95,10 @@ Baby.prototype.play = function(){
 /*
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. provides context
-  2. in methods refers to obj
-  3. by itself refers to global obj
-  4.
+  1. window/global obh binding
+  2. implicit binding
+  3. new binding
+  4. explicit binding
 */
 
 ///////// END OF CHALLENGE /////////
