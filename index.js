@@ -27,10 +27,10 @@ Person.prototype.eat = function (edible) {
   else return
 };
 Person.prototype.poop = function() { //err
-  for(let i=0; i<=this.stomach.length; i++){
-    this.stomach.pop()
-    }
-  return this.stomach.length
+  if(this.stomach.length){
+    this.stomach = []
+  }
+  return this.stomach
 }
 Person.prototype.toString = function() {
   return `${this.name} , ${this.age}`
