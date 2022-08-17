@@ -71,17 +71,23 @@ Car.prototype.fill = function(gallons){
         + Should return a string "Playing with x", x being the favorite toy.
 */
 
-function Baby() {
+function Baby(name, age, favoriteToy) {
+  Person.call(this, name, age)
+  this.favoriteToy = favoriteToy
+}
+Baby.prototype = Object.create(Person.prototype);
 
+Baby.prototype.play = function(favoriteToy){
+  return `Playing with ${this.favoriteToy}.`
 }
 
 
 /*
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1.
-  2.
-  3.
+  1. provides context
+  2. in methods refers to obj
+  3. by itself refers to global obj
   4.
 */
 
